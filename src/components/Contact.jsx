@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaInstagram, FaLinkedinIn, FaWhatsapp, FaRegEnvelope, FaCopy, FaCheck } from 'react-icons/fa';
-import { FiArrowUpRight } from 'react-icons/fi';
+import { FiArrowUpRight, FiGlobe } from 'react-icons/fi';
 import Magnetic from './Magnetic';
 
 export default function Contact() {
@@ -44,6 +44,12 @@ export default function Contact() {
       value: '@zenoraagency',
       url: 'https://www.instagram.com/zenoraagency?igsh=b3c3MmpndGE1cWhr',
       icon: FaInstagram,
+    },
+    {
+      name: 'Zenora Website',
+      value: 'zenoraagency-gilt.vercel.app',
+      url: 'https://zenoraagency-gilt.vercel.app',
+      icon: FiGlobe,
     },
   ];
 

@@ -152,34 +152,16 @@ export default function Startup() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center gap-4 justify-start pt-2">
           
-          {/* Explore Website (Coming Soon) Button */}
+          {/* Explore Website Button */}
           <Magnetic>
-            <div className="relative w-full sm:w-auto">
-              <button
-                onMouseEnter={() => setShowTooltip(true)}
-                onMouseLeave={() => setShowTooltip(false)}
-                onClick={() => {
-                  setShowTooltip(true);
-                  setTimeout(() => setShowTooltip(false), 2500);
-                }}
-                className="w-full sm:w-auto px-7 py-3.5 rounded-full font-display font-bold text-xs tracking-widest uppercase bg-white text-black hover:bg-white/90 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:scale-[1.03] text-center flex items-center justify-center gap-2 cursor-pointer"
-              >
-                Explore Zenora <FiArrowUpRight className="text-sm" />
-              </button>
-
-              <AnimatePresence>
-                {showTooltip && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10, scale: 0.95 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={{ opacity: 0, y: 10, scale: 0.95 }}
-                    className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 px-3 py-1.5 rounded-lg bg-brand-black border border-white/10 text-white font-display text-[10px] uppercase tracking-widest pointer-events-none whitespace-nowrap shadow-2xl z-30"
-                  >
-                    🚀 Website Coming Soon!
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
+            <a
+              href="https://zenoraagency-gilt.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-7 py-3.5 rounded-full font-display font-bold text-xs tracking-widest uppercase bg-white text-black hover:bg-white/90 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:scale-[1.03] text-center flex items-center justify-center gap-2 cursor-pointer"
+            >
+              Explore Zenora <FiArrowUpRight className="text-sm" />
+            </a>
           </Magnetic>
 
           {/* WhatsApp Contact Button */}

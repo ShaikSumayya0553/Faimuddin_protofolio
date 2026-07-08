@@ -59,6 +59,16 @@ export default function SocialCards() {
       glowColor: 'rgba(20, 184, 166, 0.2)',
       isComingSoon: false,
     },
+    {
+      name: 'Zenora Website',
+      username: 'zenoraagency-gilt.vercel.app',
+      url: 'https://zenoraagency-gilt.vercel.app',
+      icon: FiGlobe,
+      color: 'hover:border-brand-red/30 hover:shadow-[0_8px_30px_rgba(229,9,20,0.12)]',
+      glowColor: 'rgba(229, 9, 20, 0.2)',
+      isComingSoon: false,
+      className: 'sm:col-span-2',
+    },
   ];
 
   return (
@@ -99,7 +109,7 @@ export default function SocialCards() {
                   whileTap={card.isComingSoon ? {} : { scale: 0.985 }}
                   className={`group flex items-center justify-between p-5 rounded-2xl border border-white/5 bg-brand-black/40 backdrop-blur-xl relative overflow-hidden transition-all duration-300 w-full ${
                     card.isComingSoon ? 'opacity-50 cursor-default' : 'cursor-pointer'
-                  } ${card.color}`}
+                  } ${card.color} ${card.className || ''}`}
                 >
                   {/* Inner Ambient Glow */}
                   {!card.isComingSoon && (
