@@ -74,7 +74,7 @@ export default function SocialCards() {
   return (
     <section id="socials" className="relative py-10 z-10 w-full">
       {/* Outer Dashboard Glass Panel wrapping everything */}
-      <div className="w-full p-6 md:p-8 rounded-3xl glass-panel border border-white/5 bg-brand-card-bg/20 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+      <div className="w-full p-5 md:p-8 rounded-3xl glass-panel border border-white/10 md:border-white/5 bg-[rgba(15,15,15,0.45)] md:bg-brand-card-bg/20 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
         
         {/* Title Inside the Panel */}
         <div className="flex flex-col mb-8 text-left">
@@ -106,8 +106,8 @@ export default function SocialCards() {
                     y: -2,
                     boxShadow: `0 10px 25px -5px ${card.glowColor}`,
                   }}
-                  whileTap={card.isComingSoon ? {} : { scale: 0.985 }}
-                  className={`group flex items-center justify-between p-5 rounded-2xl border border-white/5 bg-brand-black/40 backdrop-blur-xl relative overflow-hidden transition-all duration-300 w-full ${
+                  whileTap={card.isComingSoon ? {} : { scale: 0.96 }}
+                  className={`group flex items-center justify-between p-5 rounded-2xl border border-white/10 md:border-white/5 bg-[rgba(20,20,20,0.65)] md:bg-brand-black/40 backdrop-blur-xl relative overflow-hidden transition-all duration-300 w-full ${
                     card.isComingSoon ? 'opacity-50 cursor-default' : 'cursor-pointer'
                   } ${card.color} ${card.className || ''}`}
                 >

@@ -56,7 +56,7 @@ export default function Contact() {
   return (
     <section id="contact" className="relative py-10 z-10 w-full">
       {/* Outer Dashboard Glass Panel wrapping everything */}
-      <div className="w-full p-6 md:p-8 rounded-3xl glass-panel border border-white/5 bg-brand-card-bg/20 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+      <div className="w-full p-5 md:p-8 rounded-3xl glass-panel border border-white/10 md:border-white/5 bg-[rgba(15,15,15,0.45)] md:bg-brand-card-bg/20 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           
@@ -76,7 +76,7 @@ export default function Contact() {
             <Magnetic>
               <button
                 onClick={copyToClipboard}
-                className="w-full max-w-md mt-8 p-5 rounded-2xl border border-white/5 bg-brand-black/40 hover:border-brand-red/30 cursor-pointer active:scale-[0.985] transition-all duration-300 group flex items-center justify-between gap-4"
+                className="w-full max-w-md mt-8 p-5 rounded-2xl border border-white/10 md:border-white/5 bg-[rgba(20,20,20,0.65)] md:bg-brand-black/40 hover:border-brand-red/30 cursor-pointer active:scale-[0.985] transition-all duration-300 group flex items-center justify-between gap-4"
                 title="Click to copy email"
               >
                 <div className="flex items-center gap-4 min-w-0">
@@ -132,7 +132,7 @@ export default function Contact() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: idx * 0.05 }}
                     whileHover={{ x: 4, borderColor: 'rgba(229, 9, 20, 0.3)', backgroundColor: 'rgba(255, 255, 255, 0.02)' }}
-                    className="flex items-center justify-between p-4 rounded-xl border border-white/5 bg-brand-black/40 hover:bg-white/[0.01] transition-all duration-300 group cursor-pointer w-full"
+                    className="flex items-center justify-between p-4 rounded-xl border border-white/10 md:border-white/5 bg-[rgba(20,20,20,0.65)] md:bg-brand-black/40 hover:bg-white/[0.01] transition-all duration-300 group cursor-pointer w-full"
                   >
                     <div className="flex items-center gap-4 min-w-0">
                       <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex flex-shrink-0 items-center justify-center text-white/50 group-hover:text-brand-red group-hover:border-brand-red/20 group-hover:bg-brand-red/10 transition-all duration-300">

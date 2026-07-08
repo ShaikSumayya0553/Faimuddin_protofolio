@@ -36,7 +36,7 @@ export default function Startup() {
       <div className="absolute top-1/4 right-0 w-[250px] h-[250px] rounded-full bg-brand-red/10 filter blur-[80px] pointer-events-none" />
 
       {/* Main Outer Panel */}
-      <div className="w-full p-6 md:p-8 rounded-3xl glass-panel border border-white/5 bg-brand-card-bg/20 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+      <div className="w-full p-5 md:p-8 rounded-3xl glass-panel border border-white/10 md:border-white/5 bg-[rgba(15,15,15,0.45)] md:bg-brand-card-bg/20 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
         
         {/* Story Section 1: Intro */}
         <div className="flex flex-col text-left mb-8">
@@ -118,7 +118,7 @@ export default function Startup() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group flex flex-col p-5 rounded-2xl border border-white/5 bg-brand-black/40 backdrop-blur-xl relative overflow-hidden transition-all duration-300 glass-panel-hover text-left"
+                className="group flex flex-col p-5 rounded-2xl border border-white/10 md:border-white/5 bg-[rgba(20,20,20,0.65)] md:bg-brand-black/40 backdrop-blur-xl relative overflow-hidden transition-all duration-300 glass-panel-hover text-left"
               >
                 {/* Inner Glow */}
                 <div 
